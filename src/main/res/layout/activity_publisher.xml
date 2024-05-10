@@ -1,0 +1,104 @@
+<!-- res/layout/activity_manage_publisher.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- PublisherID EditText -->
+    <EditText
+        android:id="@+id/etPublisherID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Publisher ID"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/etPublisherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPublisherID"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Name"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Book Name EditText -->
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPublisherName"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Book Name"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Date EditText -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBookName"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Date"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Number of Copies EditText -->
+    <EditText
+        android:id="@+id/etNumCopies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDate"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Number of Copies"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Add Publisher Button -->
+    <Button
+        android:id="@+id/btnAddPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNumCopies"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/my_font"
+        android:text="Add Publisher"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <!-- ListView to display publishers -->
+    <ListView
+        android:id="@+id/listViewPublishers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddPublisher"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

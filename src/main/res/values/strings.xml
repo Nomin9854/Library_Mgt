@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Libirary_Mgt</string>
+    <string name="title">Title</string>
+    <string name="author_id">Author ID</string>
+    <string name="copies_available">Copies Available</string>
+    <string name="add_book">Add Book</string>
+    <string name="add_book1">Add Book</string>
+    <string name="enter_author">Enter Author</string>
+    <string name="enter_book_title">Enter Book Title</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="enter_bookid">Enter BookID</string>
+    <string name="title_activity_register">register</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

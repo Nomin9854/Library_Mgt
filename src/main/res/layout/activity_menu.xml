@@ -1,0 +1,163 @@
+<!-- activity_main_menu.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library Management Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/my_font"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Books Icon -->
+    <LinearLayout
+        android:id="@+id/booksLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ibBooks"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Books Icon"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_book" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Books"
+            android:fontFamily="@font/my_font"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Members Icon -->
+    <LinearLayout
+        android:id="@+id/membersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/booksLayout"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ibMembers"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_member"
+            android:contentDescription="Members Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/my_font"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Publishers Icon -->
+    <LinearLayout
+        android:id="@+id/publishersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/membersLayout"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ibPublishers"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_publisher"
+            android:contentDescription="Publishers Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publishers"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/my_font"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Copies Icon -->
+
+    <!-- Additional Text (Quote or Related Text) -->
+    <LinearLayout
+        android:id="@+id/copiesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publishersLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Copies Icon"
+            android:src="@drawable/ic_copy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Copies"
+            android:textStyle="bold"
+            android:fontFamily="@font/my_font"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Exit Icon"
+        android:src="@drawable/ic_exit" />
+
+    <TextView
+        android:id="@+id/additionalText"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="-17dp"
+        android:fontFamily="@font/my_font"
+        android:paddingStart="80dp"
+        android:text="Reading is a journey that never ends."
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

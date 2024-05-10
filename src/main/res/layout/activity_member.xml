@@ -1,0 +1,91 @@
+<!-- res/layout/activity_manage_member.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- MemberID EditText -->
+    <EditText
+        android:id="@+id/etMemberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Member ID"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/etMemberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMemberID"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Name"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Gender EditText -->
+    <EditText
+        android:id="@+id/etMemberGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMemberName"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Gender"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/etMemberEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMemberGender"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Email"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/rectangle_bg"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/my_font" />
+
+    <!-- Add Member Button -->
+    <Button
+        android:id="@+id/btnAddMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMemberEmail"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/my_font"
+        android:text="Add Member"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <!-- ListView to display members -->
+    <ListView
+        android:id="@+id/listViewMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddMember"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
